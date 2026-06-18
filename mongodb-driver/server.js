@@ -4,7 +4,7 @@ const url = "mongodb://127.0.0.1:27017"//mongodb ka connect url hai jisko url na
 const db_name = "studentdb"//
 const client = new MongoClient(url);//client naame ki variale bna ke url ko mongodbClient ke ander store kiuya hua hai 
 const connectdb = async () => {
-    await client.connect();
+    await client.connect();// lient yha pr promiss return kr rha hai isliye awit ka use kr rhe hai aure server ko database ke sath connect kr rha hai 
     console.log("mongodb connected succesfully !!")
     //database ke ander jo bhi perform krna vo perform krne ke liye ye ek object de rha hai 
     return client.db(db_name)//jo db naame ka variable bnaaya hai vo cleint db jo hmko de rha hai vo return kiya hai 
