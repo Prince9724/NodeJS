@@ -65,5 +65,5 @@ const findone = async()=>{
 // findone();// ye mangodb ko bolega ki student naam ki collection dhundo aur usme se prince naame ka oura data laao 
 onlyFind();
 
-attarintiki daredi
+// attarintiki daredi
 
