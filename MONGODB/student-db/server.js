@@ -50,12 +50,20 @@ const findone = async()=>{
     const result =  await db.collection("student").findOne({name:"Prince"});
     console.log(result)
 }
+ const onlyFind = async()=>{
+    const db = await clientDb();
+    const result = await db.collection("stdent").find( 
+        {name:"Prince"},
+        // {name:"prince "}
+     ).toArray()
+        console.log(result )
 
+ }
 // studentdb();
 // getuser();
 // updatedb();
 // findone();// ye mangodb ko bolega ki student naam ki collection dhundo aur usme se prince naame ka oura data laao 
+onlyFind();
 
-
-
+attarintiki daredi
 
